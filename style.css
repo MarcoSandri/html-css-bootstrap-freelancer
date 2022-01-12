@@ -1,6 +1,5 @@
-.ms-header {
+.ms-nav {
     background-color: #2c3e50;
-    height: 70px;
 }
 
 .ms-avatar {
@@ -17,19 +16,35 @@
     width: 200px;
 }
 
-.ms-white {
-    background-color: white;
-}
-
-.ms-black {
-    background-color: black;
-}
-
 .ms-other-color {
-background-color: #3a546d;
+    background-color: #3a546d;
 }
 
 .ms-icon {
-    width: 50px;
-    height: 50px;
+    padding: 0.5em 0.6em
+}
+
+.ms-star-white, .ms-star-dark {
+    display: flex;
+    align-items: center;
+}
+
+.ms-star-white::before, .ms-star-white::after {
+    content:"";
+    display: inline-block;  
+    height: 6px;
+    width: 150px;
+    border-radius: 500px;
+    margin: 0.75rem;
+    background-color: white;
+}
+
+.ms-star-dark::before, .ms-star-dark::after {
+    content:"";
+    display: inline-block;  
+    height: 6px;
+    width: 150px;
+    border-radius: 500px;
+    margin: 0.75rem;
+    background-color: black;
 }
