@@ -48,3 +48,36 @@
     margin: 0.75rem;
     background-color: black;
 }
+
+.ms-interact {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-overlay {
+    background-color: rgba(26, 188, 156, 0.5);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.ms-interact:hover .ms-overlay{
+    display: block;
+}
+
+.ms-hover-icon {
+    position: absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    display: none;
+    z-index: 1;
+}
+
+.ms-interact:hover .ms-hover-icon{
+   display: block;
+}
+
